@@ -1,0 +1,14 @@
+channels:
+  - conda-forge
+  - anaconda
+dependencies:
+  - python >=3.9,<3.10
+  - pip
+  - ipykernel
+  - ruff
+  - mypy
+  - isort
+  - pre-commit
+  # --- packaging ---
+  - conda-build
+  - anaconda-client
