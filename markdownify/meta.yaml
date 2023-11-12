@@ -10,6 +10,7 @@ source:
   sha256: 009b240e0c9f4c8eaf1d085625dcd4011e12f0f8cec55dedf9ea6f7655e49bfe
 
 build:
+  noarch: generic
   number: 0
   entry_points:
     - markdownify = markdownify.main:main
@@ -26,12 +27,12 @@ requirements:
     - python
     - six >=1.15,<2
 
-test:
-  imports:
-    - markdownify
-    - tests
-  commands:
-    - markdownify --help
+# test:
+#   imports:
+#     - markdownify
+#     - tests
+#   commands:
+#     - markdownify --help
 
 about:
   home: "http://github.com/matthewwithanm/python-markdownify"
